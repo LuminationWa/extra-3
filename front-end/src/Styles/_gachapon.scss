@@ -1,0 +1,39 @@
+@import "variables";
+
+.gachapon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $secondary-color-100;
+  max-width: min(100vw, $sizing-max * 2);
+  .gacha-top {
+    width: 100%;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $sizing-7;
+  }
+  .gacha-main {
+    border: 1px solid black;
+    display: grid;
+    padding: $sizing-7;
+    grid-template-columns: 65% 35%;
+    .banner-img {
+      max-width: $sizing-max;
+      box-shadow: $box-shadow-1;
+    }
+    .gacha-buttons {
+      border: 1px solid white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: $sizing-5;
+      background-color: $secondary-color-50;
+    }
+  }
+  .gacha-bottom {
+  }
+}

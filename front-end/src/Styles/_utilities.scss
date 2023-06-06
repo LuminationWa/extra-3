@@ -1,0 +1,16 @@
+@import 'variables';
+
+.btn-no-style {
+    background: none;
+    border: none;
+}
+
+.primary-btn {
+    border: none;
+    background-color: $quaternary-color-100;
+    padding: $sizing-5 $sizing-11;
+    border-radius: $sizing-2;
+    font-size: $font-size-5;
+    font-weight: bold;
+    box-shadow: $box-shadow-1;
+}
