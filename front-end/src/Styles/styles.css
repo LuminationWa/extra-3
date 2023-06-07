@@ -4,14 +4,25 @@
   border: none;
 }
 
+.btn-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .primary-btn {
   border: none;
   background-color: hsl(270, 95%, 95%);
-  padding: 24px 192px;
-  border-radius: 8px;
+  padding: 16px 48px;
+  border-radius: 0.25rem;
   font-size: 20px;
   font-weight: bold;
   box-shadow: hsla(210, 6%, 50%, 0.3) 0px 1px 2px 0px, hsla(206, 6%, 50%, 0.15) 0px 2px 6px 2px;
+  max-width: 100%;
+}
+
+.icon {
+  height: 32px;
 }
 
 .gachapon {
@@ -19,35 +30,51 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: hsl(214, 71%, 90%);
-  max-width: min(100vw, 1536px);
+  background-color: hsl(214, 100%, 90%);
+  max-width: min(60vw, 1536px);
 }
 .gachapon .gacha-top {
   width: 100%;
-  border: 1px solid red;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 48px;
+  padding: 24px;
+  position: relative;
+}
+.gachapon .gacha-top .gacha-top-right {
+  display: flex;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+}
+.gachapon .gacha-top .gacha-top-right .gacha-top-user-info {
+  display: flex;
+}
+.gachapon .gacha-top .gacha-top-right .gacha-top-user-info .user-currency {
+  display: flex;
+}
+.gachapon .gacha-top img {
+  max-width: 384px;
 }
 .gachapon .gacha-main {
-  border: 1px solid black;
   display: grid;
-  padding: 48px;
+  padding: 12px;
   grid-template-columns: 65% 35%;
+  background-color: hsl(214, 100%, 90%);
 }
 .gachapon .gacha-main .banner-img {
-  max-width: 768px;
+  max-width: min(100%, 768px);
   box-shadow: hsla(210, 6%, 50%, 0.3) 0px 1px 2px 0px, hsla(206, 6%, 50%, 0.15) 0px 2px 6px 2px;
 }
 .gachapon .gacha-main .gacha-buttons {
-  border: 1px solid white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 24px;
-  background-color: hsl(214, 100%, 90%);
+  background-color: hsl(214, 65%, 85%);
+  width: 100%;
+  border-radius: 0 0.25rem 0.25rem 0;
 }
 * {
   margin: 0;
@@ -58,8 +85,6 @@
 }
 
 body {
-  height: 100vh;
-  width: 100vw;
   background: lighten hsl(209, 15%, 68%);
 }
 

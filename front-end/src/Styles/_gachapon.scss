@@ -5,33 +5,50 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: $secondary-color-100;
-  max-width: min(100vw, $sizing-max * 2);
+  background-color: $secondary-color-50;
+  max-width: min(60vw, $sizing-max * 2);
   .gacha-top {
     width: 100%;
-    border: 1px solid red;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: $sizing-7;
+    padding: $sizing-5;
+    position: relative;
+    .gacha-top-right {
+      display: flex;
+      position: absolute;
+      right: $sizing-5;
+      top: $sizing-5;
+      .gacha-top-user-info {
+        display: flex;
+        .user-currency {
+          display: flex;
+        }
+      }
+    }
+
+    img {
+      max-width: $sizing-13;
+    }
   }
   .gacha-main {
-    border: 1px solid black;
     display: grid;
-    padding: $sizing-7;
+    padding: $sizing-3;
     grid-template-columns: 65% 35%;
+    background-color: $secondary-color-50;
     .banner-img {
-      max-width: $sizing-max;
+      max-width: min(100%, $sizing-max);
       box-shadow: $box-shadow-1;
     }
     .gacha-buttons {
-      border: 1px solid white;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: $sizing-5;
-      background-color: $secondary-color-50;
+      background-color: $secondary-color-200;
+      width: 100%;
+      border-radius: 0 $border-radius-s $border-radius-s 0;
     }
   }
   .gacha-bottom {
