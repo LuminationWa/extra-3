@@ -5,8 +5,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: $secondary-color-50;
+  background-color: $main-color-50;
   max-width: min(60vw, $sizing-max * 2);
+  border-radius: $border-radius-l;
+  background-image: linear-gradient(160deg, #f4e5ff 45%, rgba(250, 114, 104, 0.5) 90%);
   .gacha-top {
     width: 100%;
     display: flex;
@@ -19,6 +21,9 @@
       position: absolute;
       right: $sizing-5;
       top: $sizing-5;
+      padding: $font-size-min;
+      background: $white-accents;
+      border-radius: $border-radius-l;
       .gacha-top-user-info {
         display: flex;
         .user-currency {
@@ -33,12 +38,11 @@
   }
   .gacha-main {
     display: grid;
-    padding: $sizing-3;
+    padding: $sizing-3 0 0 0;
     grid-template-columns: 65% 35%;
-    background-color: $secondary-color-50;
     .banner-img {
       max-width: min(100%, $sizing-max);
-      box-shadow: $box-shadow-1;
+      box-shadow: $box-shadow-left;
     }
     .gacha-buttons {
       display: flex;
@@ -46,9 +50,11 @@
       justify-content: center;
       align-items: center;
       gap: $sizing-5;
-      background-color: $secondary-color-200;
       width: 100%;
       border-radius: 0 $border-radius-s $border-radius-s 0;
+      background-image: url("../Assets/images/background-waves-2.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
     }
   }
   .gacha-bottom {

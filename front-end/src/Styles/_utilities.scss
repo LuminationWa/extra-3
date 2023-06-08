@@ -12,14 +12,19 @@
 }
 
 .primary-btn {
-    border: none;
-    background-color: $quaternary-color-100;
+    border: 1px solid $main-color-900;
+    color: $main-color-900;
+    background-color: $main-color-200;
     padding: $sizing-4 $sizing-7;
     border-radius: $border-radius-s;
     font-size: $font-size-5;
     font-weight: bold;
     box-shadow: $box-shadow-1;
     max-width: 100%;
+    transition: all ease 0.3s;
+    &:hover {
+        background-color: $main-color-100;
+    }
 }
 
 .icon {

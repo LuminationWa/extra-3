@@ -6,7 +6,7 @@ import logo from "../Assets/icons/logo.png";
 const Gachapon = () => {
   return (
     <div className="gachapon">
-      <div className="gacha-top">
+      <header className="gacha-top">
         <div className="gacha-top-decoration">
           <img alt="logo" src={logo}></img>
         </div>
@@ -24,7 +24,7 @@ const Gachapon = () => {
             <img src={closeIcon} alt="close"></img>
           </button>
         </div>
-      </div>
+      </header>
       <div className="gacha-main">
         <img className="banner-img" src={heroImg} alt="Banner"></img>{" "}
         <div className="gacha-buttons">
