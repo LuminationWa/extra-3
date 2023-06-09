@@ -1,39 +1,30 @@
 @import "variables";
 
 .gachapon {
+  box-shadow: $box-shadow-left;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: $main-color-50;
   max-width: min(60vw, $sizing-max * 2);
-  border-radius: $border-radius-l;
-  background-image: linear-gradient(160deg, #f4e5ff 45%, rgba(250, 114, 104, 0.5) 90%);
+  border-radius: $border-radius-l $border-radius-l $border-radius-l 0;
+  background-image: linear-gradient(
+    160deg,
+    #f4e5ff 45%,
+    rgba(250, 114, 104, 0.5) 90%
+  );
   .gacha-top {
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
     padding: $sizing-5;
     position: relative;
-    .gacha-top-right {
-      display: flex;
-      position: absolute;
-      right: $sizing-5;
-      top: $sizing-5;
-      padding: $font-size-min;
-      background: $white-accents;
-      border-radius: $border-radius-l;
-      .gacha-top-user-info {
-        display: flex;
-        .user-currency {
-          display: flex;
-        }
-      }
+    .gacha-top-decoration {
     }
-
     img {
-      max-width: $sizing-13;
+      max-width: $sizing-14;
     }
   }
   .gacha-main {
@@ -43,18 +34,44 @@
     .banner-img {
       max-width: min(100%, $sizing-max);
       box-shadow: $box-shadow-left;
+      padding: $font-size-4;
     }
-    .gacha-buttons {
+    .main-right {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: $sizing-5;
-      width: 100%;
       border-radius: 0 $border-radius-s $border-radius-s 0;
       background-image: url("../Assets/images/background-waves-2.svg");
       background-size: cover;
       background-repeat: no-repeat;
+      .gacha-currency {
+        display: flex;
+        align-self: center;
+        img {
+          max-height: $font-size-5;
+        }
+      }
+      .gacha-buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: $sizing-5;
+        height: 100%;
+        .gacha-currency-info {
+          display: flex;
+          padding: $font-size-min;
+          background: $white-accents;
+          border-radius: $border-radius-l;
+          box-shadow: $box-shadow-bottom;
+          .user-currency {
+            display: flex;
+            align-items: center;
+            button {
+              font-size: $font-size-base;
+            }
+          }
+        }
+      }
     }
   }
   .gacha-bottom {

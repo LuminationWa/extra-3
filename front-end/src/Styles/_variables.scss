@@ -1,7 +1,7 @@
 //Colors
 
 $white-accents: rgba(255, 255, 255, 0.75);
-$main-color-50: hsl(275, 100%, 95%);
+$main-color-50: hsl(275, 100%, 93%);
 $main-color-100: hsl(275, 100%, 90%);
 $main-color-200: hsl(275, 95%, 87%);
 $main-color-300: hsl(275, 100%, 85%);
@@ -71,3 +71,4 @@ $border-radius-l: $font-size-7;
 //Box shadow
 $box-shadow-1: hsla(210, 6%, 50%, 0.3) 0px 1px 2px 0px, hsla(206, 6%, 50%, 0.15) 0px 2px 6px 2px;
 $box-shadow-left: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+$box-shadow-bottom: 0px 2px 4px hsla(210, 6%, 50%, 0.3), 0px 4px 12px hsla(206, 6%, 50%, 0.15);
