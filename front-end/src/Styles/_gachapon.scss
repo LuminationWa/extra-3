@@ -12,30 +12,45 @@
   background-image: linear-gradient(
     160deg,
     #f4e5ff 45%,
-    rgba(250, 114, 104, 0.5) 90%
+    hsla(4, 94%, 69%, 0.5) 90%
   );
+
   .gacha-top {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
     padding: $sizing-5;
     position: relative;
-    .gacha-top-decoration {
+
+    .close-icon {
+      width: 100%;
+      justify-content: flex-end;
     }
-    img {
-      max-width: $sizing-14;
+
+    .gacha-top-decoration {
+      display: flex;
+      justify-content: center;
+      flex-grow: 1;
+
+      img {
+        max-width: $sizing-14;
+      }
     }
   }
+
   .gacha-main {
     display: grid;
     padding: $sizing-3 0 0 0;
     grid-template-columns: 65% 35%;
+
     .banner-img {
       max-width: min(100%, $sizing-max);
       box-shadow: $box-shadow-left;
       padding: $font-size-4;
     }
+
     .main-right {
       display: flex;
       flex-direction: column;
@@ -43,13 +58,7 @@
       background-image: url("../Assets/images/background-waves-2.svg");
       background-size: cover;
       background-repeat: no-repeat;
-      .gacha-currency {
-        display: flex;
-        align-self: center;
-        img {
-          max-height: $font-size-5;
-        }
-      }
+
       .gacha-buttons {
         display: flex;
         flex-direction: column;
@@ -57,23 +66,66 @@
         align-items: center;
         gap: $sizing-5;
         height: 100%;
-        .gacha-currency-info {
+
+        .gacha-currency {
           display: flex;
-          padding: $font-size-min;
-          background: $white-accents;
-          border-radius: $border-radius-l;
-          box-shadow: $box-shadow-bottom;
-          .user-currency {
+          align-self: center;
+
+          img {
+            max-height: $font-size-5;
+          }
+
+          .gacha-currency-info {
             display: flex;
-            align-items: center;
-            button {
-              font-size: $font-size-base;
+            padding: $font-size-min;
+            background-color: $white-accents;
+            border-radius: $border-radius-l;
+            box-shadow: $box-shadow-bottom;
+
+            .user-currency {
+              display: flex;
+              align-items: center;
+
+              button {
+                font-size: $font-size-base;
+              }
             }
           }
         }
       }
     }
   }
-  .gacha-bottom {
+}
+
+@media screen and (max-width: 768px) {
+  .gachapon {
+    max-width: min(80vw, $sizing-max * 2);
+    gap: $sizing-4;
+    padding: $sizing-4;
+    border-radius: $border-radius-l;
+    .gacha-top {
+      padding: 0;
+      .gacha-top-decoration {
+        img {
+          max-width: min(100%, 768px);
+        }
+      }
+    }
+
+    .gacha-main {
+      display: flex;
+      flex-direction: column;
+      gap: $sizing-4;
+
+      .banner-img {
+        box-shadow: none;
+        padding: 0;
+        border-radius: $border-radius-s;
+        border: 1px solid $white-accents;
+      }
+      .main-right {
+        background-image: none;
+      }
+    }
   }
 }

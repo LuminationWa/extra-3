@@ -7,12 +7,12 @@ const Gachapon = () => {
   return (
     <div className="gachapon">
       <header className="gacha-top">
-        <div className="gacha-top-decoration">
-          <img alt="logo" src={logo}></img>
-        </div>
         <button className="btn-no-style btn-icon close-icon">
           <img src={closeIcon} alt="close"></img>
         </button>
+        <div className="gacha-top-decoration">
+          <img alt="logo" src={logo}></img>
+        </div>
       </header>
       <div className="gacha-main">
         <img className="banner-img" src={heroImg} alt="Banner"></img>{" "}
@@ -30,7 +30,7 @@ const Gachapon = () => {
               </div>
             </div>
             <button className="primary-btn">Single</button>
-            <button className="primary-btn">Tenfold</button>
+            <button className="primary-btn">Multi</button>
           </div>
         </div>
       </div>

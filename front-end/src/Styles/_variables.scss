@@ -1,21 +1,28 @@
 //Colors
 
-$white-accents: rgba(255, 255, 255, 0.75);
-$main-color-50: hsl(275, 100%, 93%);
+$white-accents: hsl(275, 100%, 99%);
+$main-color-50: hsl(275, 100%, 95%);
+$main-color-50-opacity: rgba(244, 229, 255, 0.6);
 $main-color-100: hsl(275, 100%, 90%);
+$main-color-100-opacity: rgba(234, 204, 255, 0.5);
 $main-color-200: hsl(275, 95%, 87%);
 $main-color-300: hsl(275, 100%, 85%);
 $main-color-400: hsl(275, 100%, 80%);
 $main-color-500: hsl(275, 100%, 61%);
 $main-color-700: hsl(275, 100%, 41%);
 $main-color-900: hsl(275, 100%, 21%);
-$secondary-color-50: hsl(214, 100%, 90%);
-$secondary-color-100: hsl(214, 71%, 90%);
-$secondary-color-200: hsl(214, 65%, 85%);
-$secondary-color-300: hsl(214, 61%, 80%);
-$secondary-color-500: hsl(214, 51%, 70%);
-$secondary-color-700: hsl(214, 41%, 60%);
-$secondary-color-900: hsl(214, 31%, 50%);
+$secondary-color-50: hsl(352, 95%, 95%);
+$secondary-color-100: hsl(352, 95%, 88%);
+$secondary-color-200: hsl(352, 95%, 78%);
+$secondary-color-250: hsl(352, 95%, 70%);
+$secondary-color-250-opacity: rgba(251, 106, 125, 0.7);
+$secondary-color-300: hsl(352, 95%, 68%);
+$secondary-color-400: hsl(4, 94%, 60%);
+$secondary-color-500: hsl(4, 94%, 50%);
+$secondary-color-600: hsl(4, 94%, 45%);
+$secondary-color-700: hsl(4, 94%, 35%);
+$secondary-color-800: hsl(4, 94%, 25%);
+$secondary-color-900: hsl(4, 94%, 15%);
 $tertiary-color-100: hsl(110, 54%, 90%);
 $tertiary-color-300: hsl(110, 44%, 80%);
 $tertiary-color-500: hsl(110, 34%, 70%);
@@ -64,7 +71,7 @@ $sizing-15: 640px;
 $sizing-max: 768px;
 
 //Border radius
-$border-radius-s: 0.25rem;
+$border-radius-s: 0.35rem;
 $border-radius-m: $font-size-5;
 $border-radius-l: $font-size-7;
 

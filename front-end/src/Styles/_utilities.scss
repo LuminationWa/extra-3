@@ -3,18 +3,20 @@
 .btn-no-style {
     background: none;
     border: none;
+    cursor: zoom-in;
 }
 
 .btn-icon {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .primary-btn {
+    cursor: pointer;
     border: none;
-    color: $main-color-900;
-    background-color: $main-color-100;
+    background-color: $white-accents;
     padding: $sizing-4 $sizing-7;
     border-radius: $border-radius-s;
     font-size: $font-size-5;
@@ -23,10 +25,18 @@
     max-width: 100%;
     transition: all ease 0.3s;
     &:hover {
-        background-color: $main-color-50;
+        background-color: $main-color-50-opacity;
     }
 }
 
 .icon {
     height: $font-size-base * 2;
+}
+
+@media screen and (max-width: 768px) { 
+    .primary-btn {
+        padding: $sizing-3 $sizing-6;
+        font-size: $font-size-base;
+        font-weight: 500;
+    }
 }
